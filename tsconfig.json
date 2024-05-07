@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@playwrightConfig/*": ["./playwright.config.ts"],
+      "@utils/*": ["e2e/utils/*"],
+      "@factories/*": ["factories/*"],
+      "@pages/*": ["e2e/pages/*"]
+    }
+  }
+}
