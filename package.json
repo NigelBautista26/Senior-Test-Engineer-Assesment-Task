@@ -1,0 +1,27 @@
+{
+  "name": "qa-test-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:local": "NODE_ENV=test npx playwright test",
+    "test:dev": "NODE_ENV=dev npx playwright test",
+    "test:dev:mobile:chrome": "NODE_ENV=dev DEVICE=mobile-chrome npx playwright test",
+    "test:dev:mobile:firefox": "NODE_ENV=dev DEVICE=mobile-firefox npx playwright test",
+    "test:dev:desktop:chrome": "NODE_ENV=dev DEVICE=chrome npx playwright test",
+    "test:dev:desktop:firefox": "NODE_ENV=dev DEVICE=firefox npx playwright test",
+    "test:dev:desktop:safari": "NODE_ENV=dev DEVICE=safari npx playwright test",
+    "test:local:desktop:chrome": "NODE_ENV=local DEVICE=chrome npx playwright test",
+    "test:local:desktop:firefox": "NODE_ENV=local DEVICE=firefox npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.10",
+    "playwright": "^1.44.0",
+    "typescript": "^5.4.5"
+  }
+}
